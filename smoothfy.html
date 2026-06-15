@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothfy — Sofryn</title>
+    <link rel="icon" type="image/png" href="Logo Smoothfy.png" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+    <a class="nav-logo" href="index.html">
+        <img src="Logo Sofryn.png" alt="Sofryn" />
+        Sofryn
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html#mods">Mods</a></li>
+    </ul>
+</nav>
+
+<a class="back-link" href="index.html">
+    &#8592; Back to all mods
+</a>
+
+<div class="mod-hero">
+    <img src="Logo Smoothfy.png" alt="Smoothfy Logo" />
+    <div class="mod-hero-text">
+        <h1>Smoothfy</h1>
+        <p>Polished GUI open &amp; close animations for every inventory and container screen in Minecraft.</p>
+        <span class="version-tag">&#9670; Forge &nbsp;|&nbsp; 1.20.1 &nbsp;&amp;&nbsp; 1.20.2</span>
+    </div>
+</div>
+
+<div class="tabs-wrap">
+    <ul class="tabs" id="tab-nav">
+        <li><a href="#" class="active" data-tab="overview">Overview</a></li>
+        <li><a href="#" data-tab="license">License</a></li>
+    </ul>
+</div>
+
+<div class="section">
+
+    <!-- OVERVIEW -->
+    <div class="tab-content active" id="tab-overview">
+        <div class="overview-grid">
+            <div class="info-card">
+                <h3>What it does</h3>
+                <p>Adds smooth scale animations (open &amp; close) to all container GUIs — inventory, chest, crafting table, furnace, and any modded container screen.</p>
+            </div>
+            <div class="info-card">
+                <h3>Author</h3>
+                <p>TheKrant</p>
+            </div>
+            <div class="info-card">
+                <h3>Supported versions</h3>
+                <p>Minecraft 1.20.1 (Forge 47.4.10+)<br>Minecraft 1.20.2 (Forge 48.1.0+)</p>
+            </div>
+            <div class="info-card">
+                <h3>License</h3>
+                <p>SmoothFy Custom License 1.0 &mdash; <a href="#" data-tab="license" style="color:var(--accent);text-decoration:none;" class="tab-link">Read it here</a></p>
+            </div>
+            <div class="info-card" style="grid-column: span 2;">
+                <h3>How it works</h3>
+                <p>Uses Forge mixins and the ScreenEvent render pipeline to apply a PoseStack scale transform on every container screen frame. The animation runs at 200 ms with a quadratic ease-out on open and ease-in on close. A <code style="color:var(--accent);background:rgba(124,106,247,.1);padding:1px 6px;border-radius:4px;">hasRenderedOnce</code> guard prevents false close animations (e.g. the creative inventory double-open quirk in vanilla Forge).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LICENSE -->
+    <div class="tab-content" id="tab-license">
+        <div class="license-box">
+            <h2>SmoothFy Custom License</h2>
+            <p style="color:var(--muted);font-size:.9rem;margin-bottom:2rem;">Copyright &copy; 2026 SmoothFy (TheKrant). All rights reserved.</p>
+
+            <div class="license-section">
+                <h3>&#10003; &nbsp;Permission — You are free to</h3>
+                <ul>
+                    <li>Download, install, and use SmoothFy for personal or commercial purposes.</li>
+                    <li>Include official, unmodified versions of SmoothFy in public or private modpacks.</li>
+                    <li>Redistribute official, unmodified releases of SmoothFy as part of a modpack.</li>
+                    <li>Create videos, livestreams, screenshots, reviews, tutorials, and other content featuring SmoothFy.</li>
+                    <li>Develop addons, integrations, compatibility layers, extensions, or tools that interact with SmoothFy.</li>
+                </ul>
+            </div>
+
+            <div class="license-section restrict">
+                <h3>&#10007; &nbsp;Restrictions — You may not</h3>
+                <ul>
+                    <li>Copy, reuse, or incorporate any part of SmoothFy's source code into another project.</li>
+                    <li>Create, publish, distribute, or maintain forks of SmoothFy.</li>
+                    <li>Publish, distribute, or share modified versions of SmoothFy without prior written permission from the author.</li>
+                    <li>Redistribute SmoothFy's source code outside its official repositories.</li>
+                    <li>Remove, alter, or obscure copyright notices, branding, or license information.</li>
+                    <li>Use the SmoothFy name, logo, or branding to represent modified or unofficial versions of the project.</li>
+                </ul>
+            </div>
+
+            <div class="license-section">
+                <h3>&#9965; &nbsp;Addons &amp; Integrations</h3>
+                <p>Third-party projects that interact with SmoothFy are welcome, provided that they do not include or copy SmoothFy source code, do not redistribute modified versions of SmoothFy, and clearly identify themselves as independent projects.<br><br>
+                Creating addons, compatibility modules, integrations, APIs, utilities, or enhancements that work alongside SmoothFy is explicitly permitted.</p>
+            </div>
+
+            <div class="license-section">
+                <h3>&#9670; &nbsp;Ownership</h3>
+                <p>SmoothFy, including its source code, assets, branding, logos, and related materials, remains the intellectual property of its author(s). This license grants permission to use the mod under the terms above but does not transfer ownership of any part of the project.</p>
+            </div>
+
+            <div class="license-disclaimer">
+                <strong>Disclaimer:</strong> THE MOD IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE MOD OR ITS USE.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Sofryn &mdash; TheKrant. All rights reserved.
+</footer>
+
+<script>
+    const tabLinks = document.querySelectorAll('[data-tab]');
+
+    function switchTab(tabId) {
+        document.querySelectorAll('.tabs a').forEach(a => a.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        const navLink = document.querySelector(`.tabs a[data-tab="${tabId}"]`);
+        if (navLink) navLink.classList.add('active');
+        const content = document.getElementById(`tab-${tabId}`);
+        if (content) content.classList.add('active');
+    }
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            switchTab(link.dataset.tab);
+        });
+    });
+</script>
+
+</body>
+</html>
