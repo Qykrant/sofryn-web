@@ -147,6 +147,28 @@ nav {
 
 .mod-card-header h2 { font-size: 1.15rem; font-weight: 700; }
 
+.mod-monogram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 52px;
+    width: 52px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.mod-monogram-large {
+    height: 80px;
+    width: 80px;
+    border-radius: 16px;
+    font-size: 2.2rem;
+}
+
 .mod-card p { color: var(--muted); font-size: .9rem; }
 
 .mod-badge {
@@ -271,6 +293,12 @@ nav {
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--text);
+}
+
+.license-copyright {
+    color: var(--muted);
+    font-size: .9rem;
+    margin-bottom: 2rem;
 }
 
 .license-section { margin-bottom: 2rem; }
