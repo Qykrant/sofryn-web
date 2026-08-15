@@ -54,14 +54,6 @@ body.page-leaving .site-shell {
 
 .loader-content { width: 64px; text-align: center; }
 
-.loader-mark {
-    display: block;
-    margin-bottom: 12px;
-    font-size: .65rem;
-    font-weight: 700;
-    letter-spacing: .14em;
-}
-
 .loader-line {
     display: block;
     height: 1px;
@@ -103,21 +95,9 @@ nav {
 .nav-logo {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
     font-size: .82rem;
     font-weight: 650;
-}
-
-.brand-mark {
-    display: grid;
-    place-items: center;
-    width: 28px;
-    height: 28px;
-    background: var(--text);
-    color: var(--background);
-    font-size: .56rem;
-    font-weight: 800;
 }
 
 .nav-links { list-style: none; }
@@ -267,7 +247,7 @@ footer {
 
 .card-topline {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: var(--subtle);
     font-size: .66rem;
     letter-spacing: .1em;
