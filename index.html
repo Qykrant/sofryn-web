@@ -3,57 +3,97 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sofryn — Minecraft Mods</title>
-    <link rel="icon" type="image/png" href="Logo Sofryn.png" />
+    <title>Krant&rsquo;s Project &mdash; Minecraft Mods</title>
+    <meta name="description" content="Independent Minecraft mods built with care by Krant's Project." />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js" defer></script>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; script-src 'self'; frame-ancestors 'none'; form-action 'self'" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
     <meta name="robots" content="index, follow" />
 </head>
 <body>
-
-<nav>
-    <a class="nav-logo" href="index.html">
-        <img src="Logo Sofryn.png" alt="Sofryn" />
-        Sofryn
-    </a>
-    <ul class="nav-links">
-        <li><a href="#mods">Mods</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    <img class="hero-logo" src="Logo Sofryn.png" alt="Sofryn Logo" />
-    <h1>Sofryn</h1>
-    <p>Polished, open-source Minecraft mods crafted with care for a smoother, more responsive game experience.</p>
-</section>
-
-<section class="section" id="mods">
-    <h2 class="section-title">Our <span>Mods</span></h2>
-    <div class="mod-grid">
-        <a class="mod-card" href="smoothfy.html">
-            <div class="mod-card-header">
-                <img src="Logo Smoothfy.png" alt="Smoothfy" />
-                <h2>Smoothfy</h2>
-            </div>
-            <p>Buttery-smooth GUI animations for every inventory and container screen. Open and close with style.</p>
-            <span class="mod-badge">Forge · 1.20.1 · 1.20.2</span>
-        </a>
-        <a class="mod-card" href="shirium.html">
-            <div class="mod-card-header">
-                <span class="mod-monogram" aria-hidden="true">S</span>
-                <h2>Shirium</h2>
-            </div>
-            <p>View the terms for using, modifying, and including Shirium in modpacks.</p>
-            <span class="mod-badge">Custom License</span>
-        </a>
+<div class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+        <span class="loader-mark">KP</span>
+        <span class="loader-line"></span>
     </div>
-</section>
+</div>
 
-<footer>
-    &copy; 2026 Sofryn &mdash; TheKrant. All rights reserved.
-</footer>
+<div class="site-shell">
+    <nav>
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html" aria-label="Krant's Project home">
+                <span class="brand-mark" aria-hidden="true">KP</span>
+                <span>Krant&rsquo;s Project</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#mods">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Independent Minecraft development</p>
+            <h1>Krant&rsquo;s<br><span>Project.</span></h1>
+            <p class="hero-copy">Focused mods, thoughtful interactions, and carefully defined licenses. Built to make every detail feel intentional.</p>
+            <a class="button" href="#mods">Explore projects <span aria-hidden="true">&darr;</span></a>
+            <div class="hero-meta" aria-label="Project summary">
+                <span><strong>02</strong> Active projects</span>
+                <span><strong>01</strong> Clear vision</span>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="mods">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Projects</h2>
+                </div>
+                <p>Small, purposeful tools made for the Minecraft community.</p>
+            </div>
+
+            <div class="mod-grid">
+                <a class="mod-card transition-link" href="smoothfy.html">
+                    <div class="card-topline">
+                        <span>01</span>
+                        <span class="card-arrow" aria-hidden="true">&nearr;</span>
+                    </div>
+                    <div class="mod-card-header">
+                        <img src="Logo Smoothfy.png" alt="Smoothfy" />
+                        <div>
+                            <p class="card-label">Interface animation</p>
+                            <h3>Smoothfy</h3>
+                        </div>
+                    </div>
+                    <p>Buttery-smooth GUI animations for every inventory and container screen. Open and close with style.</p>
+                    <span class="mod-badge">Forge &middot; 1.20.1 &middot; 1.20.2</span>
+                </a>
+
+                <a class="mod-card transition-link" href="shirium.html">
+                    <div class="card-topline">
+                        <span>02</span>
+                        <span class="card-arrow" aria-hidden="true">&nearr;</span>
+                    </div>
+                    <div class="mod-card-header">
+                        <span class="mod-monogram" aria-hidden="true">S</span>
+                        <div>
+                            <p class="card-label">Personal project</p>
+                            <h3>Shirium</h3>
+                        </div>
+                    </div>
+                    <p>Usage, modification, and distribution terms for the Shirium Minecraft mod.</p>
+                    <span class="mod-badge">Custom License</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>&copy; 2026 Krant&rsquo;s Project</span>
+        <span>Independent Minecraft development</span>
+    </footer>
+</div>
 </body>
 </html>

@@ -3,66 +3,83 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shirium &mdash; Sofryn</title>
-    <link rel="icon" type="image/png" href="Logo Sofryn.png" />
+    <title>Shirium &mdash; Krant&rsquo;s Project</title>
+    <meta name="description" content="The custom license for Shirium by Krant's Project." />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js" defer></script>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; script-src 'self'; frame-ancestors 'none'; form-action 'self'" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
     <meta name="robots" content="index, follow" />
 </head>
 <body>
-
-<nav>
-    <a class="nav-logo" href="index.html">
-        <img src="Logo Sofryn.png" alt="Sofryn" />
-        Sofryn
-    </a>
-</nav>
-
-<div class="mod-hero">
-    <span class="mod-monogram mod-monogram-large" aria-hidden="true">S</span>
-    <div class="mod-hero-text">
-        <h1>Shirium</h1>
-    </div>
+<div class="page-loader" aria-hidden="true">
+    <div class="loader-content"><span class="loader-mark">KP</span><span class="loader-line"></span></div>
 </div>
 
-<div class="section">
-    <div class="license-box">
-        <h2>Shirium Custom License</h2>
-        <p class="license-copyright">Copyright &copy; Qykrant. All rights reserved.</p>
-
-        <div class="license-section">
-            <p>This software (Shirium) is provided for personal use only.</p>
+<div class="site-shell">
+    <nav>
+        <div class="nav-inner">
+            <a class="nav-logo transition-link" href="index.html" aria-label="Krant's Project home">
+                <span class="brand-mark" aria-hidden="true">KP</span>
+                <span>Krant&rsquo;s Project</span>
+            </a>
+            <a class="nav-back transition-link" href="index.html#mods">All projects <span aria-hidden="true">&nearr;</span></a>
         </div>
+    </nav>
 
-        <div class="license-section">
-            <h3>&#10003; &nbsp;You are allowed to</h3>
-            <ul>
-                <li>Use this mod in modpacks.</li>
-                <li>Modify it for personal/private use.</li>
-            </ul>
-        </div>
+    <main class="project-page">
+        <header class="project-hero">
+            <div class="project-identity">
+                <span class="mod-monogram mod-monogram-large" aria-hidden="true">S</span>
+                <div>
+                    <p class="eyebrow">Project 02 &middot; Custom license</p>
+                    <h1>Shirium</h1>
+                </div>
+            </div>
+            <p class="project-intro">A personal-use license with direct, unambiguous boundaries.</p>
+        </header>
 
-        <div class="license-section restrict">
-            <h3>&#10007; &nbsp;You are NOT allowed to</h3>
-            <ul>
-                <li>Redistribute this mod without permission.</li>
-                <li>Upload this mod to other websites or platforms.</li>
-                <li>Create public forks or derivatives.</li>
-                <li>Use any part of the code in other projects without explicit permission.</li>
-            </ul>
-        </div>
+        <section class="license-box" aria-labelledby="license-title">
+            <div class="license-header">
+                <div>
+                    <p class="eyebrow">Legal</p>
+                    <h2 id="license-title">Shirium Custom License</h2>
+                </div>
+                <span class="license-status">Personal use only</span>
+            </div>
+            <p class="license-copyright">Copyright &copy; Qykrant. All rights reserved.</p>
 
-        <div class="license-disclaimer">
-            This software is provided &quot;as is&quot;, without warranty of any kind.
-        </div>
-    </div>
+            <div class="license-lead">This software (Shirium) is provided for personal use only.</div>
+
+            <div class="license-grid license-grid-two">
+                <div class="license-section">
+                    <h3><span>01</span> You are allowed to</h3>
+                    <ul>
+                        <li>Use this mod in modpacks.</li>
+                        <li>Modify it for personal/private use.</li>
+                    </ul>
+                </div>
+
+                <div class="license-section restrict">
+                    <h3><span>02</span> You are not allowed to</h3>
+                    <ul>
+                        <li>Redistribute this mod without permission.</li>
+                        <li>Upload this mod to other websites or platforms.</li>
+                        <li>Create public forks or derivatives.</li>
+                        <li>Use any part of the code in other projects without explicit permission.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="license-disclaimer">
+                <strong>Disclaimer</strong>
+                <p>This software is provided "as is", without warranty of any kind.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer><span>&copy; 2026 Krant&rsquo;s Project</span><span>Independent Minecraft development</span></footer>
 </div>
-
-<footer>
-    &copy; 2026 Sofryn &mdash; TheKrant. All rights reserved.
-</footer>
-
 </body>
 </html>
