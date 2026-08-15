@@ -109,15 +109,12 @@ nav {
     font-weight: 650;
 }
 
-.brand-mark {
-    display: grid;
-    place-items: center;
+.brand-logo {
     width: 28px;
     height: 28px;
-    background: var(--text);
-    color: var(--background);
-    font-size: .56rem;
-    font-weight: 800;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 .nav-links { list-style: none; }
@@ -150,6 +147,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 88px 0 64px;
+}
+
+.hero-brand-logo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    object-fit: cover;
 }
 
 .eyebrow {
@@ -305,6 +311,7 @@ footer {
 
 .mod-card-header img.shirium-logo {
     padding: 0;
+    border-radius: 12px;
     filter: none;
 }
 
@@ -384,6 +391,7 @@ footer {
 
 .project-identity img.shirium-logo {
     padding: 0;
+    border-radius: 16px;
     filter: none;
 }
 
