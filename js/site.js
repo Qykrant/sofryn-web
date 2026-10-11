@@ -10,6 +10,14 @@
         document.body.classList.remove('page-leaving');
     });
 
+    document.addEventListener('selectstart', function (event) {
+        event.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+    });
+
     document.querySelectorAll('a[href]').forEach(function (link) {
         link.addEventListener('click', function (event) {
             var url = new URL(link.href, window.location.href);
